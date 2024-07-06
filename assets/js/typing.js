@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < text.length) {
             textElement.innerHTML += text.charAt(index);
             index++;
-            typingTimeout = setTimeout(() => typeText(text, index), 100); // Adjust typing speed by changing the timeout value
+            typingTimeout = setTimeout(() => typeText(text, index), 10); // Adjust typing speed by changing the timeout value
         } else {
             cursorElement.style.display = "none"; // Hide cursor after typing is complete
         }
